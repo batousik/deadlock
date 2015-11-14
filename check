@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in $(seq 1 50); do
+    (echo "pc3-0$i-l"
+     ssh pc3-0$i-l "who") >> ~/deadlock/top_out
+    echo "done pc3-0$i-l"
+done
